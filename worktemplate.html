@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Work Template</title>
+		<title>Sample Page w/ Slider</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700italic,700' rel='stylesheet' type='text/css'>
 		<link href='css/styles.css' rel='stylesheet' type='text/css'/>
@@ -13,7 +13,7 @@
 		<header>
 			<div class="content">
 	            <a href="index.html"><h1 id="logo"><span>Terrace</span></h1></a>
-	            <nav>
+	            <nav><!-- Create Page not created yet -->
 					<a href="#">Create</a>
 					<a href="#docs">Docs</a>
 					<a href="#demos">Demos</a>
@@ -21,23 +21,23 @@
 	    	</div>
         </header>
 		<div class="gfull hero" style="background: #010403;">
-			<img src="_Dev/img_rebull_hero.png"/>
+			<img src="_Dev/img_home_hero.png"/>
 		</div>
 		<div class="g1 detail">
-			<p class="title">Client</p>
-			<p class="subtitle">Redbull</p>
+			<p class="title">Short Title</p>
+			<p class="subtitle">Main Point</p>
 		</div>
 		<div class="g1 detail">
-			<p class="title">Role</p>
-			<p class="subtitle">Art Director</p>
+			<p class="title">Short Title</p>
+			<p class="subtitle">Main Point</p>
 		</div>
 		<div class="g1 detail">
-			<p class="title">Timeline</p>
-			<p class="subtitle">2 Months</p>
+			<p class="title">Short Title</p>
+			<p class="subtitle">Main Point</p>
 		</div>
 		<div class="g1 detail">
-			<p class="title">Canvas</p>
-			<p class="subtitle">Desktop</p>
+			<p class="title">Short Title</p>
+			<p class="subtitle">Main Point</p>
 		</div>
 		<div class="gfull">
 			<p class="about">Mauris nec nisi odio. <span>Proin vel tellus urna.</span> Proin nec pulvinar lacus. Sed nunc neque, pulvinar at fringilla et, congue ac ipsum.</p>
@@ -49,6 +49,7 @@
 			</div>
 		</div>
 		<div class="gfull">
+			<!-- Non-dynamic slider, needs to be dynamic(loop through images in order by file name) -->
 			<div class="flexslider">
 				<ul class="slides">
 					<li>
@@ -68,36 +69,32 @@
 		</div>
 		<div class="description">
 			<div class="content">
-				<p class="title">The Solution</p>
+				<p class="title">Short Title</p>
 				<p>Aenean condimentum leo ut lectus tincidunt aliquet. Donec convallis orci eget magna bibendum, at faucibus leo sodales. Mauris nec nisi odio. Proin vel tellus urna. Proin nec pulvinar lacus. Sed nunc neque, pulvinar at fringilla et, congue ac ipsum. Vivamus vel felis vel ex dapibus mollis. Fusce eget libero vitae risus porttitor convallis ut vel turpis. Morbi sagittis turpis tincidunt eros condimentum efficitur. Proin nec pulvinar lacus. Sed nunc neque, pulvinar at fringilla et, congue ac ipsum. Vivamus vel felis vel ex dapibus mollis. Fusce eget libero vitae risus porttitor convallis ut vel turpis. Morbi sagittis turpis tincidunt eros condimentum efficitur.</p>
 			</div>
-		</div>	
+		</div>
 		<a href="#">
-			<div class="g4 orange work">
-				<img src="_Dev/img_project_workday.png" class="desktop"/>
+			<div class="g4 lightblue work">
+				<img src="_Dev/img_project_redbull.png" class="desktop"/>
 				<p class="title">Project Title</p>
 				<p class="subtitle">Short Description of Project</p>
 			</div>
 		</a>
 		<a href="#">
-			<div class="g4 lightblue work">
-				<img src="_Dev/img_project_redbull.png" class="desktop"/>
+			<div class="g4 orange work">
+				<img src="_Dev/img_project_ready.png" class="phone"/>
 				<p class="title">Project Title</p>
-				<p class="subtitle">TShort Description of Project</p>
+				<p class="subtitle">Short Description of Project</p>
 			</div>
 		</a>
 		<footer id="contact">
-			<div class="g2">
-			</div>
-
-			<div class="g2">
-				<p class="alignright">GetTerrace.co<br>
+			<div class="g4">
+				<p class="alignright"><span>GetTerrace.co</span><br>
 					All Rights Reserved<br>
-					<span>'15 Til Infinity</span>
+					'15 til
 				</p>
 			</div>
 		</footer>
-
 
 
 
@@ -117,6 +114,12 @@
 		  });
 		});
 		</script>
+
+
+		<!-- Please implement smooth scrolling on anchor links -->
+
+
+
 
 		<!-- Optional FlexSlider Additions -->
 		<script src="js/jquery.easing.js"></script>

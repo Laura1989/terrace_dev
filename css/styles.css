@@ -81,13 +81,30 @@ header {
   background: #fafafa; }
 
 .lightblue {
-  background: #38bac8; }
+  background: #00CBE0; }
 
 .orange {
-  background: #f47022; }
+  background: #FF5F00; }
 
 .work {
-  padding: 106px 20px; }
+  padding: 106px 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  -ms-align-content: stretch;
+  align-content: stretch;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   @media screen and (max-width: 420px) {
     .work {
       padding: 53px 20px; } }
@@ -114,10 +131,12 @@ header {
       height: auto; } }
   .g4 img.phone {
     width: 100%;
-    max-width: 160px; }
+    max-width: 160px;
+    margin: 0 auto; }
   .g4 img.desktop {
     width: 100%;
-    max-width: 551px; }
+    max-width: 551px;
+    margin: 0 auto; }
 
 .g1 {
   /* 4 quarters */
@@ -149,10 +168,12 @@ header {
         font-size: 20px; } }
   .g1 img.phone {
     width: 100%;
-    max-width: 160px; }
+    max-width: 160px;
+    margin: 0 auto; }
   .g1 img.desktop {
     width: 100%;
-    max-width: 551px; }
+    max-width: 551px;
+    margin: 0 auto; }
 
 ul.flex-direction-nav {
   display: none; }
@@ -216,43 +237,23 @@ ul.flex-direction-nav {
 footer {
   width: 100%;
   float: left;
-  margin-bottom: 20px; }
-  @media screen and (max-width: 420px) {
-    footer {
-      padding: 20px 0;
-      margin: 40px 0 20px 0; } }
-  footer .g2 {
-    width: 50%;
+  height: 100px;
+  border-top: 1px solid #f1f1f1; }
+  footer .g4 {
+    width: 100%;
     float: left;
-    padding: 20px 20px 0 20px; }
-    @media screen and (max-width: 900px) {
-      footer .g2 {
-        width: 100%; } }
-    @media screen and (max-width: 480px) {
-      footer .g2 {
-        padding: 0 20px; } }
-    footer .g2 .g2 {
-      padding: 0; }
-      @media screen and (max-width: 480px) {
-        footer .g2 .g2:first-child {
-          width: 100%;
-          padding: 20px 0 0 0;
-          margin-bottom: 40px; } }
-      @media screen and (max-width: 900px) {
-        footer .g2 .g2 {
-          width: 50%; } }
-      @media screen and (max-width: 480px) {
-        footer .g2 .g2 {
-          width: 100%; } }
-    footer .g2 p span {
+    padding: 20px;
+    height: 100px; }
+    footer .g4 p span {
       color: #6CD55E;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 22px;
       padding: 0; }
       @media screen and (max-width: 420px) {
-        footer .g2 p span {
+        footer .g4 p span {
           font-size: 20px; } }
-    footer .g2 .alignright {
-      text-align: right; }
+    footer .g4 .alignright {
+      text-align: right;
+      color: #000; }
 
 /*# sourceMappingURL=styles.css.map */

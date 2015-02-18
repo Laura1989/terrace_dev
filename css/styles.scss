@@ -1,8 +1,8 @@
 /* GLOBAL VARIABLES */
 $text: #484848;
 $brightgreen: #6CD55E;
-$orange: #f47022;
-$lightblue: #38bac8;
+$orange: #FF5F00;
+$lightblue: #00CBE0;
 $darkgrey: #1e1e1e;
 $phonewidth: 160px;
 $desktopwidth: 551px;
@@ -101,6 +101,23 @@ header {
 }
 .work {
 	padding: 106px 20px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-moz-align-content: stretch;
+	-ms-align-content: stretch;
+	align-content: stretch;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	@media screen and (max-width: 420px){
 		padding: 53px 20px;
 	}
@@ -129,10 +146,12 @@ header {
 	img.phone {
 		width: 100%;
 		max-width: $phonewidth;
+		margin: 0 auto;
 	}
 	img.desktop {
 		width: 100%;
 		max-width: $desktopwidth;
+		margin: 0 auto;
 	}
 }
 .g1 { /* 4 quarters */
@@ -168,10 +187,12 @@ header {
 	img.phone {
 		width: 100%;
 		max-width: $phonewidth;
+		margin: 0 auto;
 	}
 	img.desktop {
 		width: 100%;
 		max-width: $desktopwidth;
+		margin: 0 auto;
 	}
 }
 ul.flex-direction-nav {
@@ -242,41 +263,17 @@ ul.flex-direction-nav {
 footer {
 	width: 100%;
 	float: left;
-	margin-bottom: 20px;
-	@media screen and (max-width: 420px){
-		padding: 20px 0;
-		margin: 40px 0 20px 0;
-	}
-	.g2 {
-		width: 50%;
+	height: 100px;
+	border-top: 1px solid #f1f1f1;
+	.g4 {
+		width: 100%;
 		float: left;
-		padding: 20px 20px 0 20px;	
-		@media screen and (max-width: 900px){
-			width: 100%;
-		}	
-		@media screen and (max-width: 480px){
-			padding: 0 20px;
-		}
-		.g2 {
-			padding: 0;	
-			&:first-child {			
-				@media screen and (max-width: 480px){
-					width: 100%;
-					padding: 20px 0 0 0;
-					margin-bottom: 40px;
-				}
-			} 
-			@media screen and (max-width: 900px){
-				width: 50%;
-			}		
-			@media screen and (max-width: 480px){
-				width: 100%;
-			}
-		}
+		padding: 20px;
+		height: 100px;
 		p span {
 			color: $brightgreen;
 			font-weight: 700;
-			font-size: 24px;
+			font-size: 22px;
 			padding: 0;
 			@media screen and (max-width: 420px){
 				font-size: 20px;
@@ -284,6 +281,7 @@ footer {
 		}
 		.alignright {
 			text-align: right;
+			color: #000;
 		}
 	}
 }
