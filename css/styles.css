@@ -1,0 +1,258 @@
+/* GLOBAL VARIABLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background: #FFF;
+  font-size: 16px; }
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #FFF;
+  border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  @media screen and (max-width: 420px) {
+    header {
+      height: 65px; } }
+  header .content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto; }
+    header .content a #logo {
+      display: block;
+      height: 80px;
+      width: 80px;
+      background: url(../_Dev/image_logo.png) #333;
+      float: left; }
+      @media screen and (max-width: 420px) {
+        header .content a #logo {
+          height: 65px;
+          width: 65px;
+          background-size: 65px 65px; } }
+      header .content a #logo span {
+        display: none; }
+    header .content nav {
+      float: right;
+      height: 80px; }
+      header .content nav a {
+        height: 80px;
+        float: right;
+        padding: 30px 20px;
+        display: block;
+        color: #484848;
+        text-decoration: none; }
+        @media screen and (max-width: 420px) {
+          header .content nav a {
+            height: 65px;
+            padding: 22px 20px 0 20px; } }
+        @media screen and (max-width: 360px) {
+          header .content nav a {
+            padding: 22px 15px 0 15px; } }
+        header .content nav a:hover {
+          color: #6CD55E;
+          font-weight: 700; }
+
+.hero {
+  margin: 80px 0 0 0;
+  background: #333; }
+  @media screen and (max-width: 420px) {
+    .hero {
+      margin: 60px 0 0 0; } }
+
+.gfull {
+  width: 100%;
+  text-align: center; }
+  .gfull img {
+    width: 100%;
+    max-width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+
+.lightgrey {
+  background: #fafafa; }
+
+.lightblue {
+  background: #38bac8; }
+
+.orange {
+  background: #f47022; }
+
+.work {
+  padding: 106px 20px; }
+  @media screen and (max-width: 420px) {
+    .work {
+      padding: 53px 20px; } }
+  .work .title {
+    font-weight: 700;
+    font-size: 48px;
+    padding: 40px 0 0 0;
+    display: block; }
+  .work .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    display: block; }
+
+.g4 {
+  /* 4 quarters */
+  width: 50%;
+  height: 640px;
+  float: left;
+  text-align: center;
+  color: #FFF; }
+  @media screen and (max-width: 768px) {
+    .g4 {
+      width: 100%;
+      height: auto; } }
+  .g4 img.phone {
+    width: 100%;
+    max-width: 160px; }
+  .g4 img.desktop {
+    width: 100%;
+    max-width: 551px; }
+
+.g1 {
+  /* 4 quarters */
+  width: 25%;
+  float: left;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1; }
+  .g1:last-child {
+    border-right: none; }
+  @media screen and (max-width: 768px) {
+    .g1 {
+      width: 50%; } }
+  .g1 .title {
+    color: #484848;
+    font-size: 18px;
+    display: block; }
+    @media screen and (max-width: 420px) {
+      .g1 .title {
+        font-size: 16px; } }
+  .g1 .subtitle {
+    color: #6CD55E;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 0; }
+    @media screen and (max-width: 420px) {
+      .g1 .subtitle {
+        font-size: 20px; } }
+  .g1 img.phone {
+    width: 100%;
+    max-width: 160px; }
+  .g1 img.desktop {
+    width: 100%;
+    max-width: 551px; }
+
+ul.flex-direction-nav {
+  display: none; }
+
+.gfull {
+  /* full width, short */
+  width: 100%;
+  float: left; }
+  .gfull p.about {
+    width: 100%;
+    padding: 80px 60px;
+    max-width: 1400px;
+    color: #484848;
+    display: block;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (max-width: 420px) {
+      .gfull p.about {
+        font-size: 24px;
+        padding: 80px 20px; } }
+    .gfull p.about span {
+      color: #6CD55E; }
+      .gfull p.about span:first-child {
+        font-weight: 700; }
+      .gfull p.about span:last-child {
+        font-weight: 700; }
+
+.description {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #f1f1f1; }
+  .description .content {
+    padding: 80px 230px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .description .content {
+        padding: 80px 60px; } }
+    @media screen and (max-width: 420px) {
+      .description .content {
+        padding: 80px 20px; } }
+    .description .content p.title {
+      font-weight: bold;
+      padding: 0 0 20px 0; }
+      @media screen and (max-width: 420px) {
+        .description .content p.title {
+          line-height: 34px; } }
+    .description .content p {
+      font-family: 'Georgia', serif;
+      color: #484848;
+      font-size: 24px;
+      line-height: 40px; }
+      @media screen and (max-width: 420px) {
+        .description .content p {
+          line-height: 34px; } }
+
+footer {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 420px) {
+    footer {
+      padding: 20px 0;
+      margin: 40px 0 20px 0; } }
+  footer .g2 {
+    width: 50%;
+    float: left;
+    padding: 20px 20px 0 20px; }
+    @media screen and (max-width: 900px) {
+      footer .g2 {
+        width: 100%; } }
+    @media screen and (max-width: 480px) {
+      footer .g2 {
+        padding: 0 20px; } }
+    footer .g2 .g2 {
+      padding: 0; }
+      @media screen and (max-width: 480px) {
+        footer .g2 .g2:first-child {
+          width: 100%;
+          padding: 20px 0 0 0;
+          margin-bottom: 40px; } }
+      @media screen and (max-width: 900px) {
+        footer .g2 .g2 {
+          width: 50%; } }
+      @media screen and (max-width: 480px) {
+        footer .g2 .g2 {
+          width: 100%; } }
+    footer .g2 p span {
+      color: #6CD55E;
+      font-weight: 700;
+      font-size: 24px;
+      padding: 0; }
+      @media screen and (max-width: 420px) {
+        footer .g2 p span {
+          font-size: 20px; } }
+    footer .g2 .alignright {
+      text-align: right; }
+
+/*# sourceMappingURL=styles.css.map */
